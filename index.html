@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nettoyage Toilettes</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Arial,sans-serif;background:#f0f6ff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;gap:16px}
+  .card{background:white;border-radius:20px;box-shadow:0 6px 30px rgba(0,0,0,.12);width:400px;overflow:hidden}
+  .header{background:linear-gradient(135deg,#1a4a8c 0%,#3b9ede 100%);padding:22px 20px 18px;text-align:center}
+  .header .e{font-size:40px;display:block;margin-bottom:6px}
+  .header h1{color:white;font-size:19px;font-weight:900}
+  .header p{color:rgba(255,255,255,.85);font-size:12px;margin-top:3px;font-weight:600}
+  .steps{padding:20px 20px 10px}
+  .step{display:flex;align-items:flex-start;gap:12px;margin-bottom:13px}
+  .badge{min-width:34px;height:34px;border-radius:50%;font-size:17px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .b1{background:#fee2e2}.b2{background:#fef3c7}.b3{background:#dbeafe}.b4{background:#d1fae5}.b5{background:#ede9fe}.b6{background:#e0f2fe}
+  .step-body{flex:1}
+  .step-title{font-weight:800;font-size:13px;color:#0d1a0a;margin-bottom:2px}
+  .step-desc{font-size:11.5px;color:#5a6a5a;font-weight:600;line-height:1.4}
+  hr{border:none;border-top:2px dashed #b3d4f5;margin:6px 20px 14px}
+  .tips{background:#f0f6ff;border:1.5px solid #b3d4f5;border-radius:14px;margin:0 16px 14px;padding:12px 14px}
+  .tips h3{font-size:12px;font-weight:800;color:#1a4a8c;margin-bottom:7px}
+  .tip{font-size:11px;color:#1e3a5a;font-weight:600;margin-bottom:4px;padding-left:12px;position:relative}
+  .tip::before{content:"•";color:#1a4a8c;position:absolute;left:0}
+  .qr-box{display:flex;align-items:center;gap:12px;margin:0 16px 18px;background:#f0f6ff;border-radius:14px;padding:12px 14px;border:1.5px solid #b3d4f5}
+  .qr-wrap{flex-shrink:0;width:90px;height:90px;overflow:hidden;border-radius:8px;border:2px solid #b3d4f5;display:flex;align-items:center;justify-content:center}
+  .qr-label strong{display:block;font-size:12px;font-weight:800;color:#0d1a0a;margin-bottom:3px}
+  .qr-label span{font-size:11px;color:#5a6a5a;font-weight:600;line-height:1.5}
+  .footer{text-align:center;background:linear-gradient(135deg,#1a4a8c 0%,#3b9ede 100%);color:rgba(255,255,255,.92);font-size:11px;font-weight:700;padding:10px}
+  .golden-rule{margin:0 16px 14px;background:#fffbea;border:2px solid #f5c518;border-radius:14px;padding:12px 14px;text-align:center}
+  .golden-rule .quote{font-size:12px;font-weight:800;color:#7a5700;font-style:italic;line-height:1.5}
+  .print-btn{padding:11px 28px;background:linear-gradient(135deg,#1a4a8c 0%,#3b9ede 100%);color:white;border:none;border-radius:50px;font-size:14px;font-weight:800;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.2);transition:transform .15s}
+  .print-btn:hover{transform:translateY(-2px)}
+  @media print{
+    .print-btn{display:none!important}
+    body{background:white!important;padding:0!important;display:block!important}
+    .card{box-shadow:none!important;border:1px solid #ddd!important;width:100%!important;max-width:400px!important;margin:0 auto!important;border-radius:0!important}
+    *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="header">
+    <span class="e">🚽</span>
+    <h1>Nettoyage Toilettes</h1>
+    <p>Règles d'hygiène & de respect — chaque utilisation</p>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="badge b3">🎯</div><div class="step-body"><div class="step-title">1. Vise bien !</div><div class="step-desc">Fais tes besoins dans la cuvette. Évite de faire pipi à côté — si ça arrive, nettoie immédiatement.</div></div></div>
+    <div class="step"><div class="badge b1">🚽</div><div class="step-body"><div class="step-title">2. Tirer la chasse d'eau</div><div class="step-desc">Systématiquement après chaque utilisation, sans exception. Vérifie qu'il ne reste aucune trace visible.</div></div></div>
+    <div class="step"><div class="badge b2">🪣</div><div class="step-body"><div class="step-title">3. Baisser la lunette</div><div class="step-desc">Après utilisation, rabats la lunette et le couvercle. C'est une question de respect pour les suivants.</div></div></div>
+    <div class="step"><div class="badge b4">🧽</div><div class="step-body"><div class="step-title">4. Nettoyer les traces</div><div class="step-desc">Si tu laisses des traces sur la cuvette ou le siège, utilise la brosse WC ou une lingette pour nettoyer avant de partir.</div></div></div>
+    <div class="step"><div class="badge b5">🧼</div><div class="step-body"><div class="step-title">5. Laver ses mains</div><div class="step-desc">Savon + eau pendant au moins 30 secondes. Obligatoire après chaque passage aux toilettes. Pas d'exception !</div></div></div>
+    <div class="step"><div class="badge b6">✨</div><div class="step-body"><div class="step-title">6. Laisser propre comme on a trouvé</div><div class="step-desc">Avant de sortir, jette un œil. Sol propre ? Siège propre ? Papier disponible ? Laisse l'endroit tel que tu aimerais le trouver.</div></div></div>
+  </div>
+  <hr>
+  <div class="tips">
+    <h3>💡 Rappels de bon sens</h3>
+    <div class="tip">Le papier toilette se jette dans la cuvette, pas par terre.</div>
+    <div class="tip">Si le papier est vide, remplace le rouleau — ne laisse pas le suivant sans rien.</div>
+    <div class="tip">Aère la pièce après utilisation si nécessaire.</div>
+    <div class="tip">Ces règles s'appliquent à tout le monde, sans exception.</div>
+  </div>
+  <div class="golden-rule">
+    <div class="quote">❝ Ne fais pas aux autres ce que tu ne veux pas qu'on te fasse ❞</div>
+  </div>
+  <div class="qr-box">
+    <div class="qr-wrap">
+      <svg viewBox="0 0 100 100" width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100" height="100" fill="white"/>
+        <rect x="5" y="5" width="30" height="30" rx="3" fill="none" stroke="#1a4a8c" stroke-width="4"/>
+        <rect x="12" y="12" width="16" height="16" rx="1" fill="#1a4a8c"/>
+        <rect x="65" y="5" width="30" height="30" rx="3" fill="none" stroke="#1a4a8c" stroke-width="4"/>
+        <rect x="72" y="12" width="16" height="16" rx="1" fill="#1a4a8c"/>
+        <rect x="5" y="65" width="30" height="30" rx="3" fill="none" stroke="#1a4a8c" stroke-width="4"/>
+        <rect x="12" y="72" width="16" height="16" rx="1" fill="#1a4a8c"/>
+        <rect x="42" y="5" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="55" y="5" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="42" y="14" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="55" y="14" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="42" y="42" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="55" y="42" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="65" y="42" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="42" y="55" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="65" y="55" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="42" y="65" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="55" y="65" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="65" y="65" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="75" y="42" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="85" y="42" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="75" y="55" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="75" y="65" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="85" y="65" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="42" y="75" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="55" y="85" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="65" y="75" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="85" y="75" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="75" y="85" width="6" height="6" fill="#1a4a8c"/>
+        <rect x="85" y="85" width="6" height="6" fill="#1a4a8c"/>
+      </svg>
+    </div>
+    <div class="qr-label">
+      <strong>📱 Scanne ce QR code !</strong>
+      <span>Affiche le guide en texte sur ton téléphone — compatible tous les scanners !</span>
+    </div>
+  </div>
+  <div class="footer">🚽 Des toilettes propres, c'est le respect de tous ! 🤝</div>
+</div>
+<button class="print-btn" onclick="window.print()">🖨️ Imprimer / Enregistrer en PDF</button>
+</body>
+</html>
